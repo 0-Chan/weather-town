@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import '../styles/animation.css';
 
 import sunImage from '../assets/sun.png';
 import smallCloudImage from '../assets/smallCloud.png';
@@ -23,12 +24,14 @@ const SmallCloud = styled.img`
   top: -30px;
   left: 10%;
   border: 1px solid red;
+  animation: movement linear 23s infinite;
 `;
 const BigCloud = styled.img`
   position: absolute;
   top: 20px;
   left: 0%;
   border: 1px solid red;
+  animation: movement linear 35s infinite;
 `;
 
 export default function Sky() {

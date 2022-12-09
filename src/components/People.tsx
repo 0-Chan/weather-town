@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import '../styles/animation.css';
 
 import manImage from '../assets/man.png';
 import familyImage from '../assets/family.png';
@@ -13,11 +14,13 @@ const PeopleWrapper = styled.article`
 const Man = styled.img`
   position: absolute;
   left: 0px;
+  animation: movement linear 10s infinite;
   bottom: 0px
 `;
 const Family = styled.img`
   position: absolute;
   left: 0px;
+  animation: movement linear 23s infinite;
   bottom: 0px
 `;
 

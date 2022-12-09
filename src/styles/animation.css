@@ -2,3 +2,10 @@
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+@keyframes movement {
+  0% { left: 0%; opaciry: 0; }
+  10% { opaciry: 1;}
+  80% { opaciry: 1;}
+  100% { left: 90%; opaciry: 0; }
+}
