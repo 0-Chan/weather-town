@@ -106,3 +106,101 @@
   88.88% { opacity: 0; transform: rotate(135deg); }
   100% { opacity: 0; transform: rotate(180deg); }
 }
+
+/* Day and night - 8 parts  */
+@keyframes hide1 {
+  0% { opacity: 0; }
+  11.11% { opacity: 0; }
+  22.22% { opacity: 0; }
+  33.33% { opacity: 1; }
+  44.44% { opacity: 1; }
+  55.55% { opacity: 1; }
+  66.66% { opacity: 0; }
+  77.77% { opacity: 0; }
+  88.88% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@keyframes hide2 {
+  0% { opacity: 0; }
+  11.11% { opacity: 0; }
+  22.22% { opacity: 1; }
+  33.33% { opacity: 1; }
+  44.44% { opacity: 1; }
+  55.55% { opacity: 0; }
+  66.66% { opacity: 0; }
+  77.77% { opacity: 0; }
+  88.88% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@keyframes hide3 {
+  0% { opacity: 0; }
+  11.11% { opacity: 1; }
+  22.22% { opacity: 1; }
+  33.33% { opacity: 1; }
+  44.44% { opacity: 0; }
+  55.55% { opacity: 0; }
+  66.66% { opacity: 0; }
+  77.77% { opacity: 0; }
+  88.88% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@keyframes hide4 {
+  0% { opacity: 1; }
+  11.11% { opacity: 1; }
+  22.22% { opacity: 1; }
+  33.33% { opacity: 0; }
+  44.44% { opacity: 0; }
+  55.55% { opacity: 0; }
+  66.66% { opacity: 0; }
+  77.77% { opacity: 0; }
+  88.88% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes hide5 {
+  0% { opacity: 1; }
+  11.11% { opacity: 1; }
+  22.22% { opacity: 0; }
+  33.33% { opacity: 0; }
+  44.44% { opacity: 0; }
+  55.55% { opacity: 0; }
+  66.66% { opacity: 0; }
+  77.77% { opacity: 0; }
+  88.88% { opacity: 1; }
+  100% { opacity: 1; }
+}
+@keyframes hide6 {
+  0% { opacity: 1; }
+  11.11% { opacity: 0; }
+  22.22% { opacity: 0; }
+  33.33% { opacity: 0; }
+  44.44% { opacity: 0; }
+  55.55% { opacity: 0; }
+  66.66% { opacity: 0; }
+  77.77% { opacity: 1; }
+  88.88% { opacity: 1; }
+  100% { opacity: 1; }
+}
+@keyframes hide7 {
+  0% { opacity: 0; }
+  11.11% { opacity: 0; }
+  22.22% { opacity: 0; }
+  33.33% { opacity: 0; }
+  44.44% { opacity: 0; }
+  55.55% { opacity: 0; }
+  66.66% { opacity: 1; }
+  77.77% { opacity: 1; }
+  88.88% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes hide8 {
+  0% { opacity: 0; }
+  11.11% { opacity: 0; }
+  22.22% { opacity: 0; }
+  33.33% { opacity: 0; }
+  44.44% { opacity: 0; }
+  55.55% { opacity: 1; }
+  66.66% { opacity: 1; }
+  77.77% { opacity: 1; }
+  88.88% { opacity: 0; }
+  100% { opacity: 0; }
+}

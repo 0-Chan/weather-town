@@ -16,8 +16,8 @@ function App() {
       <Clock currentTime={time} showDate />
       <section className="App-section">
         <Sky hours={timeInHours} />
-        <Town />
-        <People />
+        <Town hours={timeInHours} />
+        <People hours={timeInHours} />
       </section>
     </div>
   );
