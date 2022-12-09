@@ -1,4 +1,5 @@
 // import styled from '@emotion/styled';
+import { format } from 'date-fns';
 import './styles/App.css';
 
 import Clock from './components/Clock';
@@ -6,14 +7,15 @@ import Sky from './components/Sky';
 import Town from './components/Town';
 import People from './components/People';
 
-const currentTime = new Date();
+const time = new Date();
+const timeInHours = Number(format(time, 'HH'));
 
 function App() {
   return (
     <div className="App">
-      <Clock date={currentTime} showDate />
+      <Clock currentTime={time} showDate />
       <section className="App-section">
-        <Sky date={currentTime} />
+        <Sky hours={timeInHours} />
         <Town />
         <People />
       </section>

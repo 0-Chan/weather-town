@@ -30,13 +30,13 @@ const DateIndicate = styled.div`
 `;
 
 interface Props {
-  date: Date;
+  currentTime: Date;
   showDate: boolean;
 }
 
-export default function Clock({ date, showDate = true }: Props) {
+export default function Clock({ currentTime, showDate = true }: Props) {
   const intervalTime = 1000; // ms
-  const [time, setTime] = useState(date);
+  const [time, setTime] = useState(currentTime);
   const hours = useMemo(() => format(time, 'HH'), [time]);
   const minutes = useMemo(() => format(time, 'mm'), [time]);
   const formattedDate = useMemo(() => format(time, 'MMM d'), [time]);

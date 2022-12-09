@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import { format } from 'date-fns';
 import '../styles/animation.css';
 import { getAnimationTime } from '../utils';
 
@@ -35,11 +34,10 @@ const BigCloud = styled.img`
 `;
 
 interface Props {
-  date: Date
+  hours: number
 }
 
-export default function Sky({ date }: Props) {
-  const hours = format(date, 'HH');
+export default function Sky({ hours }: Props) {
   const startingAnimation = getAnimationTime('sun', hours);
 
   return (
