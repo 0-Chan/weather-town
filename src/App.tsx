@@ -1,30 +1,19 @@
-import styled from '@emotion/styled';
+// import styled from '@emotion/styled';
 import './styles/App.css';
 
+import Clock from './components/Clock';
 import Sky from './components/Sky';
 import Town from './components/Town';
 import People from './components/People';
 
-const Clock = styled.h1`
-  width: 1000px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 150%);
-  font: 92px/1 "Poiret one";
-  color: #ffffff;
-  text-align: center;
-  border: 1px solid red;
-`;
+const currentTime = new Date();
 
 function App() {
   return (
     <div className="App">
-      <Clock>
-        Clock⌚
-      </Clock>
+      <Clock date={currentTime} showDate />
       <section className="App-section">
-        <Sky />
+        <Sky date={currentTime} />
         <Town />
         <People />
       </section>
