@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import './App.css';
+import './styles/App.css';
 
 import Sky from './components/Sky';
 import Town from './components/Town';
