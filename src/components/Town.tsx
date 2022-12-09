@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import '../styles/animation.css';
 
 import wheelImage from '../assets/wheel.png';
 import townDayImage from '../assets/town_day.png';
@@ -10,6 +11,7 @@ const Wheel = styled.img`
   left: 50%;
   margin-left: -165px;
   opacity: 0.7;
+  animation: wheelRotation linear 20s infinite;
 `;
 const TownDay = styled.img`
   position: absolute;
