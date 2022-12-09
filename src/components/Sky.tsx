@@ -1,5 +1,7 @@
 import styled from '@emotion/styled';
+import { format } from 'date-fns';
 import '../styles/animation.css';
+import { getAnimationTime } from '../utils';
 
 import sunImage from '../assets/sun.png';
 import smallCloudImage from '../assets/smallCloud.png';
@@ -11,33 +13,38 @@ const SkyWrapper = styled.article`
   height: 100%;
   border: 1px solid red;
 `;
-const Sun = styled.img`
+const Sun = styled.img<{ animationName: string }>`
   position: absolute;
   top: -150px;
   left: 50%;
   margin-left: -100px;
   transform-origin: center 500px;
-  border: 1px solid red;
+  animation: ${({ animationName }) => (animationName ? `${animationName} linear 86400s infinite` : 'sun4 linear 86400s infinite')};
 `;
 const SmallCloud = styled.img`
   position: absolute;
   top: -30px;
   left: 10%;
-  border: 1px solid red;
   animation: movement linear 23s infinite;
 `;
 const BigCloud = styled.img`
   position: absolute;
   top: 20px;
   left: 0%;
-  border: 1px solid red;
   animation: movement linear 35s infinite;
 `;
 
-export default function Sky() {
+interface Props {
+  date: Date
+}
+
+export default function Sky({ date }: Props) {
+  const hours = format(date, 'HH');
+  const startingAnimation = getAnimationTime('sun', hours);
+
   return (
     <SkyWrapper>
-      <Sun src={sunImage} alt="sun" />
+      <Sun src={sunImage} alt="sun" animationName={startingAnimation} />
       <SmallCloud src={smallCloudImage} alt="small cloud" />
       <BigCloud src={bigCloudImage} alt="big cloud" />
     </SkyWrapper>
