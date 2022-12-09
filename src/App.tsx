@@ -1,12 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
+import styled from '@emotion/styled';
 import './App.css';
+
+import Sky from './components/Sky';
+import Town from './components/Town';
+
+const Clock = styled.h1`
+  width: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 150%);
+  font: 92px/1 "Poiret one";
+  color: #ffffff;
+  text-align: center;
+  border: 1px solid red;
+`;
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <Clock>
+        Clock
+      </Clock>
+      <section className="App-section">
+        <Sky />
+        <Town />
         <p>
           Edit
           <code>src/App.tsx</code>
@@ -20,7 +38,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </section>
     </div>
   );
 }
