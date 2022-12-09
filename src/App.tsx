@@ -3,6 +3,7 @@ import './App.css';
 
 import Sky from './components/Sky';
 import Town from './components/Town';
+import People from './components/People';
 
 const Clock = styled.h1`
   width: 1000px;
@@ -20,24 +21,12 @@ function App() {
   return (
     <div className="App">
       <Clock>
-        Clock
+        Clock⌚
       </Clock>
       <section className="App-section">
         <Sky />
         <Town />
-        <p>
-          Edit
-          <code>src/App.tsx</code>
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <People />
       </section>
     </div>
   );
