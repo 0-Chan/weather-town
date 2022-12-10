@@ -10,7 +10,6 @@ const SkyWrapper = styled.article`
   position: absolute;
   width: 100%;
   height: 100%;
-  border: 1px solid red;
 `;
 const Sun = styled.img<{ animationName: string }>`
   position: absolute;
