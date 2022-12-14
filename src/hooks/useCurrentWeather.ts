@@ -19,6 +19,7 @@ export default function useCurrentWeather(): WeatherData | null {
       lat: geoLocation.latitude,
       lon: geoLocation.longitude,
     });
+    console.log('🚀 | response', response);
     const weather = response.weather[0] ?? {};
     const data = {
       weather,
@@ -31,7 +32,9 @@ export default function useCurrentWeather(): WeatherData | null {
   }, [geoLocation, setStoredWeather]);
 
   useEffect(() => {
-    fetchWeatherData();
+    if (storedWeather === null) {
+      fetchWeatherData();
+    }
   }, [fetchWeatherData, storedWeather]);
 
   return storedWeather != null ? storedWeather : null;
