@@ -13,7 +13,6 @@ class APIOpenWeather extends APICore {
       const response: WeatherDataResponse = (await this.get('/weather', {
         lat, lon, appid: this.token, units: this.units,
       })).data;
-      console.log('🚀 | response', response);
       return response;
     } catch (err: any) {
       console.log(err.response.data);
