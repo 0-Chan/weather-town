@@ -2,9 +2,9 @@ import styled from '@emotion/styled';
 import '../styles/animation.css';
 import { getAnimationTime } from '../utils';
 
-import wheelImage from '../assets/wheel.png';
-import townDayImage from '../assets/town_day.png';
-import townNightImage from '../assets/town_night.png';
+import wheelImage from '../assets/images/wheel.png';
+import townDayImage from '../assets/images/town_day.png';
+import townNightImage from '../assets/images/town_night.png';
 
 const Wheel = styled.img`
   position: absolute;

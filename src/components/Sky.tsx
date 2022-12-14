@@ -1,10 +1,11 @@
 import styled from '@emotion/styled';
 import '../styles/animation.css';
 import { getAnimationTime } from '../utils';
+import { WeatherData } from '../models';
 
-import sunImage from '../assets/sun.png';
-import smallCloudImage from '../assets/smallCloud.png';
-import bigCloudImage from '../assets/bigCloud.png';
+import sunImage from '../assets/images/sun.png';
+import smallCloudImage from '../assets/images/smallCloud.png';
+import bigCloudImage from '../assets/images/bigCloud.png';
 
 const SkyWrapper = styled.article`
   position: absolute;
@@ -33,11 +34,13 @@ const BigCloud = styled.img`
 `;
 
 interface Props {
-  hours: number
+  hours: number,
+  currentWeather: WeatherData | null
 }
 
-export default function Sky({ hours }: Props) {
+export default function Sky({ hours, currentWeather }: Props) {
   const startingAnimation = getAnimationTime('sun', hours);
+  console.log('🚀 | currentWeather', currentWeather);
 
   return (
     <SkyWrapper>

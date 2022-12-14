@@ -2,8 +2,8 @@ import styled from '@emotion/styled';
 import '../styles/animation.css';
 import { getAnimationTime } from '../utils';
 
-import manImage from '../assets/man.png';
-import familyImage from '../assets/family.png';
+import manImage from '../assets/images/man.png';
+import familyImage from '../assets/images/family.png';
 
 const PeopleWrapper = styled.article<{ animationName: string }>`
   width: 100%;
