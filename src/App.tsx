@@ -30,7 +30,7 @@ const Indicator = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, 150%);
-  font: 9rem/0.1 "Poiret one";
+  font: 9.5rem/0.15 "Poiret one";
   color: #ffffff;
   text-align: center;
 `;

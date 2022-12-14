@@ -10,9 +10,13 @@ const WeatherIndicate = styled.h1`
   top: 70%;
   left: 50%;
   transform: translate(-50%, 150%);
-  font: 6rem/1 "Poiret one";
+  font: 4rem/1.2 "Poiret one";
   color: #ffffff;
   text-align: center;
+`;
+
+const SmallSymbol = styled.span`
+  font-size: 3rem;
 `;
 
 interface Props {
@@ -38,9 +42,15 @@ export default function Weather({ onChangeWeather }: Props) {
 
   return (
     <WeatherIndicate>
-      {/* {weatherData.weather.main} */}
+      {weatherData.type.description}
+      {' '}
+      /
       {' '}
       {weatherData.temp}
+      {' '}
+      <SmallSymbol>
+        &#8451;
+      </SmallSymbol>
     </WeatherIndicate>
   );
 }
