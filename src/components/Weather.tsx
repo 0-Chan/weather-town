@@ -30,12 +30,9 @@ export default function Weather({ onChangeWeather }: Props) {
     onChangeWeather?.(weatherData);
   }, [weatherData, onChangeWeather]);
 
-  console.log('🚀 | null1', weatherData);
   if (JSON.stringify(weatherData) === '{}' || weatherData === null) {
-    console.log('🚀 | null2', weatherData);
     return null;
   }
-  console.log('🚀 | null3', weatherData);
 
   return (
     <WeatherIndicate>
