@@ -46,7 +46,9 @@ function App() {
       <Global styles={GlobalStyles} />
       <div className="Curtain-wrapper">
         <input type="checkbox" defaultChecked />
-        <div className="Curtain-pannel left-part" />
+        <div className="Curtain-pannel left-part">
+          터치하여&nbsp;
+        </div>
         {/* prize */}
         <section className="App-section">
           <Sky hours={timeInHours} currentWeather={currentWeather} />
@@ -57,7 +59,9 @@ function App() {
           <Clock currentTime={time} showDate />
           <Weather onChangeWeather={handleChangeWeather} />
         </Indicator>
-        <div className="Curtain-pannel right-part" />
+        <div className="Curtain-pannel right-part">
+          잠금 해제!
+        </div>
       </div>
     </div>
   );
