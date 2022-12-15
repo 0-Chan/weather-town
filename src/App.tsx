@@ -44,15 +44,21 @@ function App() {
   return (
     <div className="App">
       <Global styles={GlobalStyles} />
-      <section className="App-section">
-        <Sky hours={timeInHours} currentWeather={currentWeather} />
-        <Town hours={timeInHours} />
-        <People hours={timeInHours} />
-      </section>
-      <Indicator>
-        <Clock currentTime={time} showDate />
-        <Weather onChangeWeather={handleChangeWeather} />
-      </Indicator>
+      <div className="Curtain-wrapper">
+        <input type="checkbox" defaultChecked />
+        <div className="Curtain-pannel left-part" />
+        {/* prize */}
+        <section className="App-section">
+          <Sky hours={timeInHours} currentWeather={currentWeather} />
+          <Town hours={timeInHours} />
+          <People hours={timeInHours} />
+        </section>
+        <Indicator>
+          <Clock currentTime={time} showDate />
+          <Weather onChangeWeather={handleChangeWeather} />
+        </Indicator>
+        <div className="Curtain-pannel right-part" />
+      </div>
     </div>
   );
 }
