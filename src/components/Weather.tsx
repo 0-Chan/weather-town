@@ -25,20 +25,17 @@ interface Props {
 
 export default function Weather({ onChangeWeather }: Props) {
   const weatherData = useCurrentWeather();
-  // const currentCelsiusTemp = useMemo<number>(() => {
-  //   if (!weatherData) {
-  //     return Infinity;
-  //   }
-  //   return convert
-  // })
 
   useEffect(() => {
     onChangeWeather?.(weatherData);
   }, [weatherData, onChangeWeather]);
 
-  if (!weatherData) {
+  console.log('🚀 | null1', weatherData);
+  if (JSON.stringify(weatherData) === '{}' || weatherData === null) {
+    console.log('🚀 | null2', weatherData);
     return null;
   }
+  console.log('🚀 | null3', weatherData);
 
   return (
     <WeatherIndicate>
