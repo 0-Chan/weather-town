@@ -49,7 +49,6 @@ function App() {
         <div className="Curtain-pannel left-part">
           터치하여&nbsp;
         </div>
-        {/* prize */}
         <section className="App-section">
           <Sky hours={timeInHours} currentWeather={currentWeather} />
           <Town hours={timeInHours} />
