@@ -47,7 +47,7 @@ function App() {
       <div className="Curtain-wrapper">
         <input type="checkbox" defaultChecked />
         <div className="Curtain-pannel left-part">
-          터치하여&nbsp;
+          클릭으로&nbsp;
         </div>
         <section className="App-section">
           <Sky hours={timeInHours} currentWeather={currentWeather} />
