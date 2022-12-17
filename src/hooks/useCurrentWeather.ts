@@ -1,6 +1,7 @@
 import { useCallback, useEffect } from 'react';
 import useLocalStorage from './useLocalStorage';
 import useGeoLocation from './useGeoLocation';
+import useInterval from './useInterval';
 import APIOpenWeather from '../api/APIOpenWeather';
 import { WeatherData, WeatherCodeTypeMap } from '../models';
 import weatherCodes from '../assets/weather-codes.json';
@@ -35,6 +36,10 @@ export default function useCurrentWeather(): WeatherData | null {
       fetchWeatherData();
     }
   }, [fetchWeatherData, storedWeather]);
+
+  useInterval(() => {
+    fetchWeatherData();
+  }, 1000 * 600); // ms
 
   return storedWeather != null ? storedWeather : null;
 }
