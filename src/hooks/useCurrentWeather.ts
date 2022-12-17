@@ -9,7 +9,7 @@ import weatherCodes from '../assets/weather-codes.json';
 const WEATHER_KEY = 'weather';
 export default function useCurrentWeather(): WeatherData | null {
   const [storedWeather, setStoredWeather] = useLocalStorage<WeatherData | null>(WEATHER_KEY, null);
-  const geoLocation = useGeoLocation();
+  const geoLocation = useGeoLocation({ timeout: 60000 });
 
   const fetchWeatherData = useCallback(async () => {
     if (!geoLocation) {
