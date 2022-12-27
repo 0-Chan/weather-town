@@ -1,11 +1,13 @@
 # weather-town
-TODO: image
-
+<h2 align="center">
+  <img src="https://user-images.githubusercontent.com/50035753/209622868-f265fe39-4ce7-46b4-8ba3-3eb35cffdad2.gif" width="686" height="439" align="center"/>
+</h2>
 간단한 애니메이션과 함께 바깥 환경을 알려주는 대시보드입니다.
 
 1. 시간 흐름에 따른 애니메이션 변화
-2. 선택한 시간제 표시 (12, 24 토글)
-3. 날씨, 미세먼지 (위치 기반)
+2. 날씨, 미세먼지 (위치 기반)
+
+GitHub Pages로 배포되었습니다. [[Demo](https://0-chan.github.io/weather-town/)]
 
 ## Tech Stack
 - React
@@ -20,5 +22,5 @@ $ npm start
 $ npm run build
 ```
 
-### Contributor
+### Author
 - @0-Chan (maintainer)
