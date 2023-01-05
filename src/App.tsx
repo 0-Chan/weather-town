@@ -12,6 +12,7 @@ import Sky from './components/Sky';
 import Town from './components/Town';
 import People from './components/People';
 import Weather from './components/Weather';
+import NewsTicker from './components/NewsTicker';
 import { WeatherData } from './models';
 
 const time = new Date();
@@ -27,10 +28,10 @@ const GlobalStyles = css`
 const Indicator = styled.div`
   width: 1000px;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, 150%);
-  font: 9.5rem/0.15 "Poiret one";
+  font: 8rem/0.15 "Poiret one";
   color: #ffffff;
   text-align: center;
 `;
@@ -58,6 +59,7 @@ function App() {
           <Clock currentTime={time} showDate />
           <Weather onChangeWeather={handleChangeWeather} />
         </Indicator>
+        <NewsTicker />
         <div className="Curtain-pannel right-part">
           잠금 해제!
         </div>

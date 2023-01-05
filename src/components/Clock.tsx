@@ -1,17 +1,7 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import styled from '@emotion/styled';
 import { format } from 'date-fns';
 
-// const ClockIndicate = styled.h1`
-//   width: 1000px;
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, 150%);
-//   font: 9rem/0.1 "Poiret one";
-//   color: #ffffff;
-//   text-align: center;
-// `;
 const Colon = styled.span<{ show: boolean }>`
   opacity: ${({ show }) => (show ? 1 : 0)};
   font-weight: lighter;

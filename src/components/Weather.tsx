@@ -10,7 +10,7 @@ const WeatherIndicate = styled.h1`
   top: 70%;
   left: 50%;
   transform: translate(-50%, 150%);
-  font: 4rem/1.2 "Poiret one";
+  font: 2.5rem/1.2 "Poiret one";
   color: #ffffff;
   text-align: center;
 `;
