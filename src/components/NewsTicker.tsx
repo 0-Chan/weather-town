@@ -34,16 +34,16 @@ const News = styled.p`
 
 export default function NewsTicker() {
   const newsData = useCurrentNews();
-  console.log('🚀 | newsData in compo', newsData);
+  console.log('🚀 | newsData', newsData);
 
   return (
     <TickerWrapper>
       <Ticker>
         <News>
-          aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+          Testing1...
         </News>
         <News>
-          bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+          Testing2...
         </News>
       </Ticker>
     </TickerWrapper>
