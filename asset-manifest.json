@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/weather-town/static/css/main.981a473d.css",
-    "main.js": "/weather-town/static/js/main.f76b461d.js",
+    "main.js": "/weather-town/static/js/main.737694c7.js",
     "static/media/town_day.png": "/weather-town/static/media/town_day.38db565dfbc9ce392e4f.png",
     "static/media/town_night.png": "/weather-town/static/media/town_night.173e704a3289df0e351e.png",
     "static/media/wheel.png": "/weather-town/static/media/wheel.712d657e0b434b9141a6.png",
     "index.html": "/weather-town/index.html",
     "main.981a473d.css.map": "/weather-town/static/css/main.981a473d.css.map",
-    "main.f76b461d.js.map": "/weather-town/static/js/main.f76b461d.js.map"
+    "main.737694c7.js.map": "/weather-town/static/js/main.737694c7.js.map"
   },
   "entrypoints": [
     "static/css/main.981a473d.css",
-    "static/js/main.f76b461d.js"
+    "static/js/main.737694c7.js"
   ]
 }
