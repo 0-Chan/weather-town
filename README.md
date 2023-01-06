@@ -6,6 +6,7 @@ CSS 애니메이션과 함께 생활 정보를 알려주는 대시보드입니�
 
 1. 시간 흐름에 따른 애니메이션 변화
 2. 위치 기반 날씨
+3. 실시간 뉴스 정보(네이버 뉴스 크롤링)
 
 GitHub Pages로 배포되었습니다. [[Demo](https://0-chan.github.io/weather-town/)]
 
