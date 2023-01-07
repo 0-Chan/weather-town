@@ -16,7 +16,7 @@ class APINewsCrawler extends APICore {
   async fetchNews(): Promise<NewsDataResponse> {
     console.log('🚀 | NEWS_CRAWLER_API_KEY', NEWS_CRAWLER_API_KEY);
     try {
-      const response: NewsDataResponse = (await this.get('/naver-headline-crawler', {
+      const response: NewsDataResponse = (await this.get('/', {
       })).data;
       console.log('🚀 | response', response);
       return response;
