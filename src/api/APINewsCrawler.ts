@@ -7,7 +7,7 @@ import { NewsDataResponse } from '../models';
 class APINewsCrawler extends APICore {
   constructor(options: AxiosRequestConfig, token = '') {
     const newsOptions = {
-      baseURL: 'https://t3eb5ja42j.execute-api.ap-northeast-2.amazonaws.com/default',
+      baseURL: 'https://t3eb5ja42j.execute-api.ap-northeast-2.amazonaws.com/default/naver-headline-crawler',
       headers: { 'x-api-key': NEWS_CRAWLER_API_KEY },
     };
     super(newsOptions, token);
