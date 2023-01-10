@@ -208,22 +208,22 @@
 /* Background colors - 8 parts */
 @keyframes bg1 {
 	0% { background-color: #4f53a0; }
-	0% { background-color: #6366a0; }
-	25% { background-color: #b1e1e2; }
-	25% { background-color: #c8efef; }
-	50% { background-color: #fcd2e2; }
-	50% { background-color: #c88425; }
-	75% { background-color: #636888; }
-	75% { background-color: #212648; }
-	100% { background-color: #0a0a13; }
+	11.11% { background-color: #6366a0; }
+	22.22% { background-color: #b1e1e2; }
+	33.33% { background-color: #7acfcf; }
+	44.44% { background-color: #d18da7; }
+	55.55% { background-color: #c88425; }
+	66.66% { background-color: #636888; }
+	77.77% { background-color: #212648; }
+	88.88% { background-color: #0a0a13; }
 	100% { background-color: #b08fcc; }
 }
 @keyframes bg2 {
 
 	0% { background-color: #6366a0; }
 	11.11% { background-color: #b1e1e2; }
-	22.22% { background-color: #c8efef; }
-	33.33% { background-color: #fcd2e2; }
+	22.22% { background-color: #7acfcf; }
+	33.33% { background-color: #d18da7; }
 	44.44% { background-color: #c88425; }
 	55.55% { background-color: #636888; }
 	66.66% { background-color: #212648; }
@@ -232,8 +232,8 @@
 	100% { background-color: #4f53a0; }
 }
 @keyframes bg3 {
-	0% { background-color: #c8efef; }
-	11.11% { background-color: #fcd2e2; }
+	0% { background-color: #7acfcf; }
+	11.11% { background-color: #d18da7; }
 	22.22% { background-color: #c88425; }
 	33.33% { background-color: #636888; }
 	44.44% { background-color: #212648; }
@@ -244,7 +244,7 @@
 	100% { background-color: #b1e1e2; }
 }
 @keyframes bg4 {
-	0% { background-color: #fcd2e2; }
+	0% { background-color: #d18da7; }
 	11.11% { background-color: #c88425; }
 	22.22% { background-color: #636888; }
 	33.33% { background-color: #212648; }
@@ -253,7 +253,7 @@
 	66.66% { background-color: #4f53a0; }
 	77.77% { background-color: #6366a0; }
 	88.88% { background-color: #b1e1e2; }
-	100% { background-color: #c8efef; }
+	100% { background-color: #7acfcf; }
 }
 @keyframes bg5 {
 	0% { background-color: #c88425; }
@@ -264,8 +264,8 @@
 	55.55% { background-color: #4f53a0; }
 	66.66% { background-color: #6366a0; }
 	77.77% { background-color: #b1e1e2; }
-	88.88% { background-color: #c8efef; }
-	100% { background-color: #fcd2e2; }
+	88.88% { background-color: #7acfcf; }
+	100% { background-color: #d18da7; }
 }
 @keyframes bg6 {
 	0% { background-color: #636888; }
@@ -275,8 +275,8 @@
 	44.44% { background-color: #4f53a0; }
 	55.55% { background-color: #6366a0; }
 	66.66% { background-color: #b1e1e2; }
-	77.77% { background-color: #c8efef; }
-	88.88% { background-color: #fcd2e2; }
+	77.77% { background-color: #7acfcf; }
+	88.88% { background-color: #d18da7; }
 	100% { background-color: #c88425; }
 }
 @keyframes bg7 {
@@ -286,8 +286,8 @@
 	33.33% { background-color: #4f53a0; }
 	44.44% { background-color: #6366a0; }
 	55.55% { background-color: #b1e1e2; }
-	66.66% { background-color: #c8efef; }
-	77.77% { background-color: #fcd2e2; }
+	66.66% { background-color: #7acfcf; }
+	77.77% { background-color: #d18da7; }
 	88.88% { background-color: #c88425; }
 	100% { background-color: #636888; }
 }
@@ -297,8 +297,8 @@
 	22.22% { background-color: #4f53a0; }
 	33.33% { background-color: #6366a0; }
 	44.44% { background-color: #b1e1e2; }
-	55.55% { background-color: #c8efef; }
-	66.66% { background-color: #fcd2e2; }
+	55.55% { background-color: #7acfcf; }
+	66.66% { background-color: #d18da7; }
 	77.77% { background-color: #c88425; }
 	88.88% { background-color: #636888; }
 	100% { background-color: #212648; }
