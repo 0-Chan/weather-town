@@ -29,7 +29,7 @@ export default function useCurrentWeather(): WeatherData | null {
       type: (weatherCodes as WeatherCodeTypeMap)[String(weather.id)],
     };
     setStoredWeather(data);
-  }, [geoLocation, setStoredWeather]);
+  }, [geoLocation]);
 
   useEffect(() => {
     if (JSON.stringify(storedWeather) === '{}' || storedWeather === null) {

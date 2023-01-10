@@ -13,7 +13,7 @@ export default function useCurrentNews(): NewsData[] | null {
     if (response.length !== 0) {
       setStoredNews(response);
     }
-  }, [setStoredNews]);
+  }, []);
 
   useEffect(() => {
     if (true ?? JSON.stringify(storedNews)) {
