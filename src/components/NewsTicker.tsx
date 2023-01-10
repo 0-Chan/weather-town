@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 
 import useCurrentNews from '../hooks/useCurrentNews';
+import { NewsData } from '../models';
 
 import '../styles/animation.css';
 
@@ -35,11 +36,15 @@ const News = styled.a`
 
 export default function NewsTicker() {
   const newsData = useCurrentNews();
-
+  let news: NewsData[] = [];
+  if (newsData?.length) {
+    news = newsData;
+  }
   return (
     <TickerWrapper>
       <Ticker>
-        {newsData?.map((headline) => (
+        {news.length !== 0
+        && news?.map((headline) => (
           <News key={headline.title} href={headline.url} target="_blank" rel="noopener noreferrer">
             {`${headline.title} |`}
           </News>
