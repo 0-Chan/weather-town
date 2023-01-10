@@ -16,10 +16,8 @@ export default function useCurrentNews(): NewsData[] | null {
   }, []);
 
   useEffect(() => {
-    if (true ?? JSON.stringify(storedNews)) {
-      fetchNewsData();
-    }
-  }, [fetchNewsData, storedNews]);
+    fetchNewsData();
+  }, []);
 
   useInterval(() => {
     fetchNewsData();
