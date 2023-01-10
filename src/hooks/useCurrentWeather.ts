@@ -39,7 +39,7 @@ export default function useCurrentWeather(): WeatherData | null {
 
   useInterval(() => {
     fetchWeatherData();
-  }, 1000 * 600); // ms
+  }, 1000 * 600); // 10 min
 
-  return storedWeather != null ? storedWeather : null;
+  return storedWeather ?? null;
 }
