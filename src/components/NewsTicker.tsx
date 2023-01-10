@@ -9,9 +9,9 @@ const TickerWrapper = styled.div`
   bottom: 0;
   width: 100%;
   overflow: hidden;
-  height: 5rem;
-  background-color: rgba(#000, 0.9);
-  padding-left: 50%;
+  height: 4.2rem;
+  background-color: #5d5d5dc3;
+  padding-left: 100%;
   box-sizing: content-box;
 `;
 
@@ -22,29 +22,28 @@ const Ticker = styled.div`
   white-space: nowrap;
   padding-right: 100%;
   box-sizing: content-box;
-  animation: newsFlow linear 30s infinite;
+  animation: newsFlow linear 50s infinite;
 `;
 
-const News = styled.p`
+const News = styled.a`
   display: inline-block;
   padding: 0 2rem;
-  font-size: 5rem;
+  font-size: 4rem;
   color: #ffffff;
+  text-decoration: none;
 `;
 
 export default function NewsTicker() {
   const newsData = useCurrentNews();
-  console.log('🚀 | newsData', newsData);
 
   return (
     <TickerWrapper>
       <Ticker>
-        <News>
-          Testing1...
-        </News>
-        <News>
-          Testing2...
-        </News>
+        {newsData?.map((headline) => (
+          <News key={headline.title} href={headline.url} target="_blank" rel="noopener noreferrer">
+            {`${headline.title} |`}
+          </News>
+        ))}
       </Ticker>
     </TickerWrapper>
   );
