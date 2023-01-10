@@ -17,13 +17,13 @@ const Man = styled.img`
   position: absolute;
   left: 0px;
   animation: movement linear 10s infinite;
-  bottom: 0px
+  bottom: 50px
 `;
 const Family = styled.img`
   position: absolute;
   left: 0px;
   animation: movement linear 23s infinite;
-  bottom: 0px
+  bottom: 50px
 `;
 
 interface Props {
