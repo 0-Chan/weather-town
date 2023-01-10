@@ -15,7 +15,7 @@ const WeatherIndicate = styled.h1`
   text-align: center;
 `;
 
-const SmallSymbol = styled.span`
+const CelsiusSymbol = styled.span`
   font-size: 3rem;
 `;
 
@@ -42,9 +42,9 @@ export default function Weather({ onChangeWeather }: Props) {
       {' '}
       {weatherData.temp}
       {' '}
-      <SmallSymbol>
+      <CelsiusSymbol>
         &#8451;
-      </SmallSymbol>
+      </CelsiusSymbol>
     </WeatherIndicate>
   );
 }
