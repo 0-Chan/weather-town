@@ -28,7 +28,7 @@ const GlobalStyles = css`
 const Indicator = styled.div`
   width: 1000px;
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, 150%);
   font: 8rem/0.15 "Poiret one";
