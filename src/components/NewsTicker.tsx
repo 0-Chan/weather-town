@@ -10,7 +10,7 @@ const TickerWrapper = styled.div`
   bottom: 0;
   width: 100%;
   overflow: hidden;
-  height: 4.2rem;
+  height: 5.2rem;
   background-color: #5d5d5dc3;
   padding-left: 100%;
   box-sizing: content-box;
@@ -28,7 +28,7 @@ const Ticker = styled.div`
 
 const News = styled.a`
   display: inline-block;
-  padding: 0 2rem;
+  padding: 0.5rem 4rem 4rem 0;
   font-size: 4rem;
   color: #ffffff;
   text-decoration: none;
@@ -46,7 +46,7 @@ export default function NewsTicker() {
         {news.length !== 0
         && news?.map((headline) => (
           <News key={headline.title} href={headline.url} target="_blank" rel="noopener noreferrer">
-            {`${headline.title} |`}
+            {`| ${headline.title} |`}
           </News>
         ))}
       </Ticker>
